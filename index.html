@@ -224,6 +224,7 @@
   .price-card .plan-name{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:600;}
   .price-card .plan-price{font-family:'Space Grotesk',sans-serif;font-size:44px;font-weight:700;margin:14px 0 4px;}
   .price-card .plan-price span{font-size:16px;color:var(--muted);font-weight:500;}
+  .price-card .plan-price .dual{font-size:22px;color:var(--muted);font-weight:600;}
   .price-card .plan-cta{
     display:block;margin-top:24px;padding:13px;border-radius:999px;
     background:var(--bg-soft);border:1px solid var(--border);color:var(--text);
@@ -680,13 +681,13 @@
     <div class="price-grid">
       <div class="price-card">
         <div class="plan-name">1 Year Activation</div>
-        <div class="plan-price">$6<span>/year</span></div>
+        <div class="plan-price">$6<span class="dual"> / €6</span><span>/year</span></div>
         <a href="#" data-page="activation" class="plan-cta nav-link">Choose 1 Year</a>
       </div>
       <div class="price-card featured">
         <div class="price-badge">Best Value</div>
         <div class="plan-name">Lifetime Activation</div>
-        <div class="plan-price">$10<span>/once</span></div>
+        <div class="plan-price">$10<span class="dual"> / €10</span><span>/once</span></div>
         <a href="#" data-page="activation" class="plan-cta nav-link">Choose Lifetime</a>
       </div>
     </div>
@@ -885,7 +886,7 @@
     <div class="price-grid">
       <div class="price-card">
         <div class="plan-name">1 Year Activation</div>
-        <div class="plan-price">$6<span>/year</span></div>
+        <div class="plan-price">$6<span class="dual"> / €6</span><span>/year</span></div>
         <ul class="included-list">
           <li>Full access for 12 months</li>
           <li>Works on any one device</li>
@@ -897,7 +898,7 @@
       <div class="price-card featured">
         <div class="price-badge">Best Value</div>
         <div class="plan-name">Lifetime Activation</div>
-        <div class="plan-price">$10<span>/once</span></div>
+        <div class="plan-price">$10<span class="dual"> / €10</span><span>/once</span></div>
         <ul class="included-list">
           <li>One-time payment, forever access</li>
           <li>Works on any one device</li>
@@ -1118,7 +1119,8 @@
 
   <div class="balance-card">
     <div class="label">Credit Balance</div>
-    <div class="amount" id="creditBalanceDisplay">24 credits</div>
+    <div class="amount" id="creditBalanceDisplay">0 credits</div>
+    <p style="font-size:12px;color:var(--muted-2);margin-top:8px;">You haven't purchased any credits yet — buy some below to start activating devices.</p>
   </div>
 
   <section style="padding-top:20px;padding-bottom:20px;">
